@@ -62,10 +62,11 @@
     <Compile Include="Assets\Scripts\Spawn.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
-    <Compile Include="Assets\Scripts\FoodItem.cs" />
-    <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\FoodItem.cs" />
+    <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\EnemyBlueMovement2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
