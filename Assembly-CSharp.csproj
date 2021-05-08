@@ -60,16 +60,18 @@
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\EnemyBlueMovement2.cs" />
     <Compile Include="Assets\Scripts\ElixirItem.cs" />
+    <Compile Include="Assets\Scripts\BatMovement.cs" />
     <Compile Include="Assets\Scripts\Spawn.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
     <Compile Include="Assets\Scripts\LeaveMine.cs" />
+    <Compile Include="Assets\Scripts\EnemyRedMovement.cs" />
     <Compile Include="Assets\Scripts\playerMovement.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\FoodItem.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\GoToMine.cs" />
-    <Compile Include="Assets\Scripts\EnemyRedMovement.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
