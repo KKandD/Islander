@@ -8,14 +8,20 @@ public class EnemyBlueMovement2 : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
+
+    float update;
+
     void Update()
     {
+        update += Time.deltaTime;
+        if (update > 1.0f)
+        {
+            update = 0.0f;
+            movement.x = Random.Range(-1, 2);
 
-        movement.x = Random.Range(-1, 2);
-
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+        }
     }
     private void FixedUpdate()
     {
