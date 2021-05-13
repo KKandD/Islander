@@ -1,28 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+using Assets.Scripts;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : Actor
 {
-    public int maxHealth = 100;
-    public int currentHealth;
-    public HealthBar healthBar;
-
-    void Start()
-    {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
-    void Update()
-    {
-
-    }
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-    }
     public void GetHealthByDrinkOrEat(int health)
     {
         currentHealth += health;
@@ -39,6 +19,15 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             TakeDamage(5);
+
+            var attack = Input.GetKey(KeyCode.H);
+
+            if (attack)
+            {
+                other.gameObject.GetComponent<Enemy>().TakeDamage(5);
+            }
         }
+
+       
     }
 }
