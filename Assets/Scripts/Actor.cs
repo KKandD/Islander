@@ -18,26 +18,13 @@ namespace Assets.Scripts
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
+
+            if (currentHealth <= 0)
+            {
+                Destroy(this.gameObject);
+            }
         }
 
-      /*  public void OnCollisionEnter2D(Collision2D other)
-        {
-            var isEnemy = this.gameObject.tag == "Enemy";
-
-            if (isEnemy)
-            {
-                if (other.gameObject.tag == "Player")
-                {
-                }
-                else
-                {
-                    if (other.gameObject.tag == "Enemy")
-                    {
-                        TakeDamage(5);
-                    }
-                }
-            }
-        }*/
     }
 
 }
