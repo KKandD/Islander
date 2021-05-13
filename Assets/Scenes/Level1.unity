@@ -16749,7 +16749,6 @@ GameObject:
   - component: {fileID: 2072679406}
   - component: {fileID: 2072679410}
   - component: {fileID: 2072679409}
-  - component: {fileID: 2072679411}
   - component: {fileID: 2072679412}
   m_Layer: 0
   m_Name: EnemyBlue
@@ -16889,23 +16888,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2072679411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072679405}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 220d3e1eb8e2c2d478b34f4b3ad06f61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 0
-  newTarget: 1
-  speed: 1
-  rb: {fileID: 2072679410}
-  target: {x: 0, y: 0}
 --- !u!114 &2072679412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17045,7 +17027,7 @@ GameObject:
   - component: {fileID: 2121145572}
   - component: {fileID: 2121145574}
   m_Layer: 0
-  m_Name: EnemyRed
+  m_Name: EnemyOrange
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17191,7 +17173,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2121145568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d17e5fa91cb8a5e4fb9978e5ffd7e37b, type: 3}
+  m_Script: {fileID: 11500000, guid: 518e4c8eb4698b9439b66423d7c20f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1

@@ -1,40 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts;
 
-public class EnemyBlueMovement : MonoBehaviour
+public class EnemyBlueMovement : EnemyMovement
 {
-    public float timer;
-    public int newTarget = 100;
-    public float speed;
-    public Rigidbody2D rb;
-    public Vector2 target;
-
-    public void Start()
+    void Update()
     {
-        rb = gameObject.GetComponent<Rigidbody2D>();
-    }
-
-    public void Update()
-    {
-        timer += Time.deltaTime;
-
-        if(timer >= newTarget)
+        update += Time.deltaTime;
+        if (update > 1.0f)
         {
-            NewTarget();
-            timer = 0;
+            update = 0.0f;
+            movement.x = Random.Range(-1, 2);
+
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
         }
-
-    }
-
-    void NewTarget()
-    {
-        float myX = gameObject.transform.position.x;
-        float myY = gameObject.transform.position.y;
-
-        float xPos = Random.Range(myX - 1, myX + 1);
-
-        target = new Vector2(xPos, myY);
-        rb.MovePosition(target);
     }
 }
