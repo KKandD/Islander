@@ -13,7 +13,7 @@ public class SceneTransition : MonoBehaviour
     {
         if(other.CompareTag("Player") && !other.isTrigger)
         {
-            playerStorage.initialValue = playerPosition;
+            playerStorage.runtimeValue = playerPosition;
             SceneManager.LoadScene(sceneToLoad);
         }
     }

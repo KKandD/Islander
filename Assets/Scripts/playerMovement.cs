@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        transform.position = startingPosition.initialValue;
+        transform.position = startingPosition.runtimeValue;
     }
 
     void Update()

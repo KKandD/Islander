@@ -169,10 +169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFull: 00000000
   slots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 226274790157016512, guid: 7058e90e065671941bf2cd0f587bc6ab, type: 3}
+  - {fileID: 226274790157016512, guid: 7058e90e065671941bf2cd0f587bc6ab, type: 3}
+  - {fileID: 226274790157016512, guid: 7058e90e065671941bf2cd0f587bc6ab, type: 3}
+  - {fileID: 226274790157016512, guid: 7058e90e065671941bf2cd0f587bc6ab, type: 3}
 --- !u!114 &2212677485821573441
 MonoBehaviour:
   m_ObjectHideFlags: 0
