@@ -14436,7 +14436,7 @@ GameObject:
   - component: {fileID: 1355649807}
   - component: {fileID: 1355649806}
   m_Layer: 0
-  m_Name: Sword_PickUp
+  m_Name: Sword PickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14454,7 +14454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edd12297e0fb134bab99596fee8e7fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemButton: {fileID: 1496924206211964001, guid: 667467104b3785e48855d4ff65549033, type: 3}
+  itemButton: {fileID: 711919426606317582, guid: 2d63cd4eb45adcc41a62bd21ca533104, type: 3}
 --- !u!58 &1355649807
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16199,6 +16199,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8257d66614ccd14698ed3f6d5887d37, type: 3}
+--- !u!1 &2212677486913739965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2212677485821573449, guid: a8257d66614ccd14698ed3f6d5887d37, type: 3}
+  m_PrefabInstance: {fileID: 2212677486913739964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &2212677486913739966 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2212677485821573446, guid: a8257d66614ccd14698ed3f6d5887d37, type: 3}
+  m_PrefabInstance: {fileID: 2212677486913739964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2212677486913739967 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2212677485821573450, guid: a8257d66614ccd14698ed3f6d5887d37, type: 3}
+  m_PrefabInstance: {fileID: 2212677486913739964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2212677486913739968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212677486913739965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f80a13a7ec341643a99244ab9fc866b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rb: {fileID: 2212677486913739966}
+  animator: {fileID: 2212677486913739967}
+  startingPosition: {fileID: 11400000, guid: b001d01ff0320bb478e7d011e97daaf5, type: 2}
 --- !u!1001 &6572993102312764469
 PrefabInstance:
   m_ObjectHideFlags: 0

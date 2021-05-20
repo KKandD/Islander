@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2212677485821573445}
   - component: {fileID: 2212677485821573440}
   - component: {fileID: 2212677485821573441}
-  - component: {fileID: 2212677485821573447}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -188,22 +187,6 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
---- !u!114 &2212677485821573447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2212677485821573449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f80a13a7ec341643a99244ab9fc866b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
-  rb: {fileID: 2212677485821573446}
-  animator: {fileID: 2212677485821573450}
-  startingPosition: {fileID: 11400000, guid: b001d01ff0320bb478e7d011e97daaf5, type: 2}
 --- !u!1 &2212677486595728576
 GameObject:
   m_ObjectHideFlags: 0
